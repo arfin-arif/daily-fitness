@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Body from './components/Body/Body';
 
 
 
 function App() {
   return (
     <div className="App">
-      Hello from react
+      <Body></Body>
     </div>
   );
 }
