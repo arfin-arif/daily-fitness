@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Profile from '../Profile/Profile';
 import Workouts from '../Workouts/Workouts';
 import './Body.css'
 const Body = () => {
@@ -22,8 +23,7 @@ const Body = () => {
 
             </div>
             <div className="profile-container">
-                <h1>Your Profile Here</h1>
-                <p>Arfin Arif </p>
+                <Profile></Profile>
             </div>
         </div>
     );

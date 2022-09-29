@@ -4,14 +4,15 @@ import './Workout.css'
 
 const Workouts = (props) => {
     const { workout } = props;
-    const { id, title, time, age, picture } = workout
+    const { id, title, time, info, age, picture } = workout
     return (
         <div className='workout'>
             <img className='img' src={picture} alt="" />
             <div className='workout-info'>
                 <p className='workout-name'>{title}</p>
-                <p>For Age: {age} </p>
-                <p>Time required: {time} min</p>
+                <p>{info} </p>
+                <p>For Age: <span className='span-text'> {age}</span> </p>
+                <p>Time required: <span className='span-text'>  {time}</span> min</p>
 
             </div>
 

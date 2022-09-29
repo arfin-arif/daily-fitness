@@ -1,6 +1,6 @@
 .main-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
 
     background-color: aliceblue;
 }
@@ -12,3 +12,13 @@
     gap: 45px;
     margin: 100px 50px;
 }
+
+.profile-container {
+    background-color: white;
+}
+
+/* @media screen and(max-width:1600px) {
+    .workout-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
