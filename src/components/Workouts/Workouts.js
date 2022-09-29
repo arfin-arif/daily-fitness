@@ -3,7 +3,7 @@ import React from 'react';
 import './Workout.css'
 
 const Workouts = (props) => {
-    const { workout } = props;
+    const { workout, handelAddToCart: handelAddToList } = props;
     const { id, title, time, info, age, picture } = workout
     return (
         <div className='workout'>
@@ -16,7 +16,7 @@ const Workouts = (props) => {
 
             </div>
 
-            <button className='btn-add'>
+            <button className='btn-add' onClick={() => handelAddToList(time)}>
                 <p className='btn-text'>Add To List</p>
 
             </button>

@@ -1,0 +1,14 @@
+.time {
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.break-time {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    border-radius: 5px;
+}

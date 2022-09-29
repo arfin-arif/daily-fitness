@@ -1,3 +1,28 @@
+.header {
+    /* height: 80px; */
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+    padding-left: 140px;
+
+}
+
+.logo {
+    border-radius: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.title {
+    display: flex;
+
+    margin: 0;
+    padding-left: 140px;
+    background-color: aliceblue;
+}
+
+
 .main-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -22,3 +47,24 @@
         grid-template-columns: repeat(2, 1fr);
     }
 } */
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 100px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .workout-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1em;
+        grid-row-gap: 100px;
+    }
+}

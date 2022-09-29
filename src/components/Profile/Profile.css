@@ -1,5 +1,7 @@
 .profile {
-    margin-left: 2px;
+    background-color: rgb(211, 229, 247);
+    border-radius: 10px;
+    margin: 2px;
     position: sticky;
     top: 0;
 }
@@ -24,16 +26,25 @@
     border-radius: 5px;
 }
 
-.break-time {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    background-color: aliceblue;
-    border-radius: 5px;
+.break-time button {
+    border: none;
 }
 
-.time {
-    background-color: white;
-    border-radius: 30px;
-    padding: 10px;
+
+
+
+.workout-details div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+
+}
+
+.w-time {
+    background-color: aliceblue;
+}
+
+.b-time {
+    margin-top: 10px;
+    background-color: aliceblue;
 }
