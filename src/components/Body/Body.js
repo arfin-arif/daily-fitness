@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-
+// import Workouts from '../Workouts/Workouts';
 import './Body.css'
 const Body = () => {
 
     const [workouts, setWorkouts] = useState([]);
 
     useEffect(() => {
-        fetch('assignment.json')
+        fetch('workout.json')
             .then(res => res.json())
             .then(data => setWorkouts(data))
     }, [])
@@ -15,7 +15,9 @@ const Body = () => {
         <div className='main-container'>
             <div className="workout-container">
 
-                <h2>Workout Container</h2>
+                {
+                    workouts.map(workout => console.log(workout))
+                }
 
             </div>
             <div className="profile-container">
