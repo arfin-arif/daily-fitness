@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import Workouts from '../Workouts/Workouts';
+import Workouts from '../Workouts/Workouts';
 import './Body.css'
 const Body = () => {
 
@@ -16,7 +16,8 @@ const Body = () => {
             <div className="workout-container">
 
                 {
-                    workouts.map(workout => console.log(workout))
+                    workouts.map(workout => <Workouts workout={workout}
+                        key={workout.id}      ></Workouts>)
                 }
 
             </div>
