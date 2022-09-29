@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Body.css'
 const Body = () => {
 
+    const [workouts, setWorkouts] = useState([]);
 
+    useEffect(() => {
+        fetch('assignment.json')
+            .then(res => res.json())
+            .then(data => setWorkouts(data))
+    }, [])
 
     return (
         <div className='main-container'>
